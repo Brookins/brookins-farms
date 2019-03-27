@@ -1,0 +1,107 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+  max-width: 30%;
+}
+.family-pic {
+  border-radius: 50%;
+  
+}
+.content-farm {
+ padding: 5px;
+ background: #B6E6BB;
+ border-radius: 4px;
+ margin: 4px auto;
+}
+
+p {
+  font-size: .85em;
+  margin-bottom: 1.5em;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #2979ae
+}
+.links {
+  text-align: right;
+  padding: 10px;
+}
+.archer {
+  box-align: center;
+  margin: auto;
+  text-align: center;
+  background: #e77fa7;
+}
+
+.Quizhit {
+padding-top: 20px;
+}
+
+/* I think I needed to do this for my flexbox to work effectively.
+Previously each section was taking the entire width, and the three
+sections would not align side by side */
+.Operations {
+  width: 400px;
+}
+
+/* ================================= 
+  FlexBox Layout
+==================================== */
+
+
+/* Trying to get flexbox to work here on the main content */
+
+.content-farm {
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 350 px) {
+  .content-farm {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+@media (min-width: 769px) {
+
+.img {
+  width: 20%;
+}
+h1,
+h2,
+h3 {
+  color: #c90e2f;
+}
+.links {
+  text-align: left;
+  padding: 10px;
+}
+}
+
+
+@media (min-width: 1025px) {
+
+  .content-farm {
+ 
+    margin: 0 auto;
+  }
+.img {
+  width: 30%;
+}
+}
